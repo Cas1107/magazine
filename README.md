@@ -1,4 +1,2 @@
 # magazine
 
-
-blaq bla bla
