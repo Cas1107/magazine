@@ -1,0 +1,148 @@
+<DOCtype html>
+    <html>
+
+    <head>
+        <title>To-Do list in python tutorial</title>
+
+        <link rel="stylesheet" href="css/style2.css">
+        <!-- <link rel="htmlsheet" href="pitch.html"> -->
+        <script>
+            function toggle() {
+                var x = document.getElementById("myTopnav");
+                var t = document.getElementById("hamburger");
+                if (x.className === "topnav") {
+                    x.className += "responsive";
+                    t.className = "icon open";
+
+                } else {
+                    x.className = "topnav";
+                    t.className = "icon close";
+                }
+            }
+        </script>
+    </head>
+
+    <header>
+        <img src="logo.png" alt="logo">
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="#"><img src="logo.png" alt="logo"></a></li>
+                <li><a href="magazine.html">Home</a></li>
+                <li><a href="Artikel 1Casper.html">tutorial</a></li>
+                <li><a href="Artikel 2Casper.html">Burgerschap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body class="artikel">
+        <main class="artikel">
+            <p>
+
+            <div class="icon" id="myIcon">
+                <a href="#" onclick="toggle()">&#9776</a>
+            </div>
+            </p>
+
+            <!-- <img src="..." alt="plaatje" class="artimg"> -->
+            <p>
+            <div class="art-title">Hoe maak je een To-Do list in python<span class="art-date"> 4-12-2024</span></div>
+            </p>
+
+            <div class="art-cat">Tutorial</div>
+            <div class="art-writer">geschreven door Tijn</div>
+
+
+            <br>
+            <main class="arttext">
+                <p class="texthead">Een Eenvoudige To-Do Lijst App Maken met Python</p>
+                <p>
+                    <b>Iedereen houdt van lijstjes!</b> Een to-do lijst helpt je georganiseerd te blijven. <br>
+                    In deze tutorial bouwen we samen een <i>basis to-do lijst app</i>. Je leert hoe je een programma
+                    maakt waarin je taken kunt toevoegen, bekijken, markeren als voltooid en verwijderen.
+                </p>
+
+                <p class="texthead">Benodigdheden</p>
+                <p>
+                    • Een computer met <b>Python</b> geïnstalleerd. Je kunt Python downloaden via <i>python.org</i>.
+                    <br>
+                    • Een teksteditor (bijvoorbeeld <i>Visual Studio Code, PyCharm</i> of de ingebouwde <i>IDLE</i> van
+                    Python).
+                </p>
+
+                <p class="texthead">Stap 1: Het begrijpen van onze app</p>
+                <p>
+                    De app moet: <br>
+                    1. Gebruikers toestaan om nieuwe taken toe te voegen. <br>
+                    2. De lijst met taken weergeven. <br>
+                    3. Gebruikers toestaan om een taak als voltooid te markeren. <br>
+                    4. Gebruikers toestaan een taak te verwijderen. <br>
+                    5. Het programma blijft draaien totdat de gebruiker ervoor kiest om te stoppen.
+                </p>
+
+                <p class="texthead">Stap 2: Het maken van de basisstructuur</p>
+                <p>
+                    Laten we beginnen met de <i>basisstructuur</i> van ons programma. Maak een nieuw Python-bestand en
+                    voeg het volgende toe: <br>
+                    <i>Hiermee hebben we een menu dat de gebruiker opties toont. We roepen deze functie telkens aan
+                        wanneer de gebruiker een nieuwe actie kan kiezen.</i>
+                </p>
+
+                <p class="texthead">Stap 3: Een lijst voor taken</p>
+                <p>
+                    We hebben een <b>lijst</b> nodig om de taken op te slaan. Voeg dit bovenaan toe: <br>
+                    <i>Hier slaan we alle taken in op. Later voegen we functionaliteit toe om taken toe te voegen, te
+                        bekijken, en te bewerken.</i>
+                </p>
+
+                <p class="texthead">Stap 4: Taken toevoegen</p>
+                <p>
+                    Laten we een functie maken waarmee gebruikers nieuwe taken kunnen toevoegen: <br>
+                    <i>Hier voegen we een nieuw item toe aan de lijst taken. Elke taak is een dictionary met twee
+                        eigenschappen: de naam en de voltooid-status.</i>
+                </p>
+
+                <p class="texthead">Stap 5: Taken bekijken</p>
+                <p>
+                    Nu hebben we een functie nodig om <b>alle taken</b> weer te geven: <br>
+                    <i>Met deze functie kunnen gebruikers zien welke taken ze hebben en of ze al voltooid zijn.</i>
+                </p>
+
+                <p class="texthead">Stap 6: Een taak markeren als voltooid</p>
+                <p>
+                    Nu maken we een functie om een taak als voltooid te markeren: <br>
+                    <i>Hiermee kan de gebruiker een taak selecteren op basis van het nummer in de lijst.</i>
+                </p>
+
+                <p class="texthead">Stap 7: Een taak verwijderen</p>
+                <p>
+                    Een functie om een taak uit de lijst te verwijderen: <br>
+                    <i>Deze functie verwijdert de taak met het corresponderende nummer uit de lijst.</i>
+                </p>
+
+                <p class="texthead">Stap 8: Het programma draaiende houden</p>
+                <p>
+                    We voegen een <b>loop</b> toe zodat het programma blijft draaien totdat de gebruiker kiest om te
+                    stoppen.
+                </p>
+
+                <p class="texthead">Het volledige programma</p>
+                <p>
+                    Hier is de volledige code: <br>
+                    <i>Met deze code kun je een eenvoudige en functionele to-do lijst app maken.</i>
+                </p>
+
+                <p>
+                    <b>def toon_menu():</b><br>
+                    <i>print("\nWat wil je doen?")</i><br>
+                    <b>taken = []</b><br>
+                    ...
+                </p>
+
+                <p>
+                    <i>Probeer de stappen zelf uit en ontdek hoe eenvoudig het is om een eigen to-do lijst app te
+                        maken!</i>
+                </p>
+            </main>
+    </body>
+
+    </html>

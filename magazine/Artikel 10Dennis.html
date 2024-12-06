@@ -1,0 +1,204 @@
+<DOCtype html>
+    <html>
+
+    <head>
+        <title>tutorial: een todo lijst in python coderen</title>
+
+        <link rel="stylesheet" href="css/style2.css">
+        <!-- <link rel="htmlsheet" href="pitch.html"> -->
+        <script>
+            function toggle() {
+                var x = document.getElementById("myTopnav");
+                var t = document.getElementById("hamburger");
+                if (x.className === "topnav") {
+                    x.className += "responsive";
+                    t.className = "icon open";
+
+                } else {
+                    x.className = "topnav";
+                    t.className = "icon close";
+                }
+            }
+        </script>
+    </head>
+    <header>
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="#"><img src="logo.png" alt="logo"></a></li>
+                <li><a href="magazine.html">Home</a></li>
+                <li><a href="Artikel 1Casper.html">tutorial</a></li>
+                <li><a href="Artikel 2Casper.html">Burgerschap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body id=article>
+
+
+
+
+
+        <div class="icon" id="myIcon">
+            <a href="#" onclick="toggle()">&#9776</a>
+        </div>
+
+
+        <!-- <img src="..." alt="plaatje" class="artimg"> -->
+        <p>
+        <div class="art-title">tutorial: een todo lijst in python coderen<span class="art-date"> 4-12-2024</span></div>
+        </p>
+
+        <div class="art-cat">tutorial</div>
+        <div class="art-writer">geschreven door dennis van krevel</div>
+
+
+        <br>
+        <div2 class="arttext" id="twotwo">
+            <p class="texthead">Tutorial: Hoe maak je een interactieve takenlijst in Python?</p>
+
+            <p>In deze tutorial zal worden uitgelegd hoe je in <i>Python</i> programmeert. Dit wordt gedaan aan de hand
+                van een programma dat de basispunten van coderen aanleert. Met dit programma zal je uiteindelijk een
+                takenlijst kunnen beheren.</p>
+
+            <p class="texthead">Stap 1: Een string printen waarin de lijst is geschreven</p>
+
+            <p>Het eerste wat je programma moet doen, is een overzicht geven van wat de gebruiker kan doen. Hiervoor
+                gebruiken we de <b>print</b>-functie. Met <b>print</b> kun je tekst of gegevens in de console tonen. In
+                ons geval willen we de opties tonen die de gebruiker heeft.</p>
+
+            <pre>
+            Python:
+            
+            print("opties:")
+            print("- show")
+            print("- add")
+            print("- remove")
+            print("- stop")
+            </pre>
+
+            <p><b>Wat gebeurt er hier?</b></p>
+            <p>
+                <b>print("tekst"):</b> Dit toont tekst tussen de aanhalingstekens in de console. In dit geval laten we
+                de opties zien die de gebruiker kan kiezen.
+            </p>
+
+            <p class="texthead">Stap 2: Een input schrijven</p>
+
+            <p>Nu de gebruiker de opties ziet, willen we dat ze een keuze kunnen maken. Hiervoor gebruiken we de
+                <b>input</b>-functie. Met <b>input</b> kun je een vraag stellen en de invoer van de gebruiker opslaan.
+            </p>
+
+            <pre>
+            Python:
+            
+            choice = input(":>")
+            </pre>
+
+            <p><b>Wat gebeurt er hier?</b></p>
+            <p>
+                <b>input("tekst"):</b> Met <i>input</i> kan je de gebruiker iets laten typen in de console zodat het
+                ergens anders kan worden gebruikt. Ook kun je van tevoren wat tekst toevoegen die het programma iets
+                laat zien voordat je de invoer geeft, zoals wat voor invoer er wordt verwacht.
+            </p>
+
+            <p class="texthead">Stap 3: Met een if-statement checken wat de gebruiker heeft opgeschreven</p>
+
+            <pre>
+            Python:
+            
+            if choice == "show":
+                print("knippen", "graven", "schoonmaken")
+            </pre>
+
+            <p><b>Wat gebeurt er hier?</b></p>
+            <p>
+                <b>if choice == "show":</b> Controleert of de invoer van de gebruiker gelijk is aan "show". Let op dat
+                als Python iets moet controleren je een dubbel =-teken gebruikt.
+            </p>
+
+            <p class="texthead">Stap 4: De else en elif toevoegen om een reactie te geven als de input niet geldig is
+            </p>
+
+            <pre>
+            Python:
+            
+            elif choice == "add":
+                todo.append(input("wat wil je toevoegen?"))
+            elif choice == "stop":
+                programm_running = False
+            else:
+                print("no option detected")
+            </pre>
+
+            <p><b>Wat gebeurt er hier?</b></p>
+            <p>
+                <b>elif:</b> Controleert een andere mogelijkheid, zoals "add". Hij zal alleen worden uitgevoerd als de
+                voorgaande statements niet geldig zijn.
+            </p>
+            <p>
+                <b>else:</b> Voert de code uit als geen enkele voorgaande optie overeenkomt. Hier geven we een melding
+                dat de invoer ongeldig is.
+            </p>
+
+            <p class="texthead">Stap 5: De while-code en de bijbehorende variabele maken</p>
+
+            <pre>
+            Python:
+            
+            programm_running = True
+            
+            while programm_running:
+                choice = input(":>")
+                # De rest van de code komt hier
+            </pre>
+
+            <p><b>Wat gebeurt er hier?</b></p>
+            <p>
+                <b>programm_running = True:</b> Een variabele die aangeeft of het programma moet blijven draaien.
+            </p>
+
+            <p class="texthead">Stap 6: De array aanmaken en hoe je deze kunt aanpassen</p>
+
+            <pre>
+            Python:
+            
+            todo = ["knippen", "graven", "schoonmaken"]
+            </pre>
+
+            <p><b>Wat gebeurt er hier?</b></p>
+            <p>
+                <b>todo:</b> De naam van de lijst.
+            </p>
+
+            <p class="texthead">Stap 7: De functie toevoegen zodat removechoice kan worden herhaald</p>
+
+            <pre>
+            Python:
+            
+            def removechoice():
+                removable = input("remove what?")
+                if removable in todo:
+                    todo.remove(removable)
+                else:
+                    print("input not found in list. try again:")
+                    removechoice()
+            </pre>
+
+            <p><b>Wat gebeurt er hier?</b></p>
+            <p>
+                <b>def removechoice():</b> Dit definieert de functie.
+            </p>
+
+            <p class="texthead">Hoe werkt het volledige programma?</p>
+
+            <p>
+                Het programma toont de opties en wacht op de invoer van de gebruiker. Afhankelijk van de invoer voert
+                het programma acties uit: taken toevoegen, taken verwijderen, de lijst tonen of stoppen. De lus blijft
+                herhalen totdat de gebruiker "stop" invoert.
+            </p>
+            <p>Met dit programma kun je een interactieve takenlijst beheren! Je hebt nu de basisbeginselen van
+                programmeren geleerd: variabelen, lijsten, functies, lussen en conditionele statements.</p>
+        </div2>
+    </body>
+
+    </html>

@@ -1,0 +1,118 @@
+<DOCtype html>
+    <html>
+
+    <head>
+        <title>artikel voor magazine.</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="htmlsheet" href="magazine.html">
+        <script>
+            function toggle() {
+                var x = document.getElementById("myTopnav");
+                var t = document.getElementById("hamburger");
+                if (x.className === "topnav") {
+                    x.className += "responsive";
+                    t.className = "icon open";
+
+                } else {
+                    x.className = "topnav";
+                    t.className = "icon close";
+                }
+            }
+        </script>
+    </head>
+
+    <header>
+        <img src="logo.png" alt="logo">
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <!-- <li><a class="logo" href="auteursrecht">LooptyLoop</a></li> -->
+                <li><a href="magazine.html">Home</a></li>
+                <li><a href="Artikel 1Casper.html">tutorial</a></li>
+                <li><a href="Artikel 2Casper.html">Burgerschap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body class="artikel">
+        <main class="artikel">
+
+
+            <div class="icon" id="myIcon">
+                <a href="#" onclick="toggle()">&#9776</a>
+            </div>
+            <!-- <img src="#" alt="plaatje" class="artimg"> -->
+            <div class="art-title">Leer een eenvoudige calculator maken in python<a class="art-date"> 05/12/2024</a>
+            </div>
+            <div class="art-cat">Nederlands</div><a class="art-writer">
+                <p></p>Geschreven door Casper Hendriks</p>
+            </a>
+
+            <a class="arttext">
+                <h1>inleiding</h1>
+                <p>Programmeren is een krachtige tool die je in staat stelt om allerlei problemen op te lossen. In deze
+                    tutorial leer je hoe je met Python een eenvoudige calculator kunt maken. Deze calculator kan
+                    optellen, aftrekken, vermenigvuldigen en delen. Python is een van de meest toegankelijke
+                    programmeertalen en perfect voor beginners.</p>
+                <h1>Benodigdheden.</h1>
+                <ul>
+                    <li>
+                        <p>Python: Download en installeer Python (versie 3.x) via de officiële website.</p>
+                    </li>
+                    <li>
+                        <p>Een code-editor: Gebruik bijvoorbeeld Visual Studio Code of de standaard IDLE-editor die bij
+                            Python wordt geleverd.</p>
+                    </li>
+                </ul>
+
+                <h1>Stap 1: Begin met de basis</h1>
+                <p>Open je code-editor en maak een nieuw Python-bestand, bijvoorbeeld calculator.py. Start met een
+                    eenvoudige begroeting voor de gebruiker.</p>
+                <div class="foto1"><img id="img" src="Screenshot 2024-12-05 160429.png" alt="afbeelding 1"></div>
+                <p>Sla je bestand op en voer het uit om te controleren of het werkt.</p>
+
+
+                <h1>Stap 2: Functies maken</h1>
+                <p>In Python gebruik je functies om specifieke taken uit te voeren. We maken aparte functies voor
+                    optellen, aftrekken, vermenigvuldigen en delen.</p>
+                <div class="foto2"><img id="img" src="Screenshot1 2024-12-05 161855.png" alt="afbeelding 2"></div>
+
+                <h1>Stap 3: De gebruiker invoer laten geven</h1>
+                <p>Een calculator is nutteloos zonder invoer. Gebruik de input()-functie om de gebruiker om getallen en
+                    een bewerking te vragen.</p>
+                <div class="foto2"><img id="img" src="Screenshot2 2024-12-05 161947.png" alt="afbeelding 3"></div>
+
+                <h1>Stap 4: De bewerking uitvoeren</h1>
+                <p>Koppel de keuze van de gebruiker aan de functies die we eerder hebben gemaakt. Gebruik een
+                    if-elif-else-structuur om de juiste functie uit te voeren.</p>
+                <div class="foto2"><img id="img" src="Screenshot3 2024-12-05 162004.png" alt="afbeelding 3"></div>
+
+                <h1>Stap 5: Test je calculator</h1>
+                <p>Sla je code op en voer deze uit. Test elk type bewerking en controleer of je calculator correct
+                    werkt. Probeer bijvoorbeeld wat gebeurt als je een nul invoert bij delen.</p>
+
+                <h1>Stap 6: Verbeteringen en uitbreidingen</h1>
+                <p>Nu je basiscalculator werkt, kun je deze uitbreiden met extra functies, zoals:</p>
+                <ul>
+                    <li>
+                        <p>De mogelijkheid om meerdere bewerkingen uit te voeren zonder de calculator opnieuw op te
+                            starten.</p>
+                    </li>
+                    <li>
+                        <p>Complexere bewerkingen zoals machtsverheffen of worteltrekken.</p>
+                    </li>
+                    <li>
+                        <p>Een grafische interface met bibliotheken zoals tkinter.</p>
+                    </li>
+                </ul>
+
+                <h1>Afsluiting</h1>
+                <p>Gefeliciteerd! Je hebt je eigen werkende calculator gemaakt. Deze eenvoudige toepassing laat zien hoe
+                    krachtig en flexibel Python is. Experimenteer verder, voeg nieuwe functies toe en blijf leren. Veel
+                    programmeerplezier!</p>
+                <br><br>
+            </a>
+        </main>
+    </body>
+
+    </html>
